@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
-    background-color: #c9d6ff;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    background-color: #e2e2e2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +46,7 @@ body{
 }
 
 .container button{
-    background-color: #512da8;
+    background-color: #9A1C1F;
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -161,9 +160,9 @@ body{
 }
 
 .toggle{
-    background-color: #512da8;
+    background-color: #9A1C1F;
     height: 100%;
-    background: linear-gradient(to right, #5c6bc0, #512da8);
+    background: linear-gradient(to right, #9A1C1F, #9e1d1d);
     color: #fff;
     position: relative;
     left: -100%;
@@ -207,4 +206,33 @@ body{
 
 .container.active .toggle-right{
     transform: translateX(200%);
+}
+
+/* Estilo para os campos de senha */
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 35px; /* Espaço para o ícone */
+}
+
+.password-container i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Ajustando o tamanho dos inputs de senha */
+#password, #confirm-password {
+    width: 100%;
+    padding-right: 35px; /* Espaço para o ícone */
+}
+
+i {
+    color: #9A1C1F;
 }
